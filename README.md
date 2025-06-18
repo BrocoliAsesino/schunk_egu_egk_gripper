@@ -35,7 +35,7 @@ source /opt/ros/humble/setup.bash
 ```
 navigate into your local ROS2 workspace, and build the driver with
 ```bash
-git clone -b develop https://github.com/SCHUNK-SE-Co-KG/schunk_egu_egk_gripper.git src/schunk_gripper
+git clone -b develop https://github.com/BrocoliAsesino/schunk_egu_egk_gripper.git
 sudo apt update -qq
 rosdep update
 rosdep install --from-paths src --ignore-src -y
