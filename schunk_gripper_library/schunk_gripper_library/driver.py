@@ -154,7 +154,7 @@ class Driver(object):
                 self.mb_client = NonExclusiveSerialClient(
                     port=serial_port,
                     baudrate=115200,
-                    parity="N",
+                    parity="E",
                     stopbits=1,
                     trace_connect=None,
                     trace_packet=None,
@@ -465,6 +465,8 @@ class Driver(object):
             return True
 
         for param, fields in self.readable_parameters.items():
+            # print(f"Raw data received: {data}")
+            # print(f"Unpacked value: {value}")
             if fields["name"] in self.module_parameters:
                 if not (data := self.read_module_parameter(param)):
                     return False
