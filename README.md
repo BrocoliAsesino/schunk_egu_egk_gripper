@@ -51,3 +51,6 @@ and start the driver with
 ```bash
 ros2 launch schunk_gripper_driver driver.launch.py
 ```
+
+## EUT
+Make sure we are on develop
